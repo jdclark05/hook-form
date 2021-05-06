@@ -3,26 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
    
     
 const Form = (props) => {
-    const{inputs, setInputs} = props;
-    // const [firstName, setFirstName] = useState("");
-    // const [lastName, setLastName] = useState("");
-    // const [email, setEmail] = useState("");
-    // const [password, setPassword] = useState("");
-    // const [confirmPassword, setConfirmPassword] = useState("");  
+    const{inputs, setInputs} = props; 
     
     const onChange = e => {
         setInputs({
             ...inputs,
             [e.target.name]: e.target.value
         });
-        // e.preventDefault();
-        // const newUser = { firstName, lastName, email, password, confirmPassword};
-        // console.log("Welcome", newUser);
-        // setFirstName("");
-        // setLastName("");
-        // setEmail("");
-        // setPassword("");
-        // setConfirmPassword(""); 
 
     };
     
